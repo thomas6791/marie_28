@@ -1,0 +1,87 @@
+$black: #6d6875;
+
+$prune: #b5838d;
+$red: #e5989b;
+$orange: #ffb4a2;
+$light: #ffcdb2;
+
+.current {
+  color: green;
+}
+html {
+  font-family: 'Avenir', cursive;
+  scroll-behavior: smooth;
+}
+* { padding:0px; margin: 0px; }
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+main { min-height: 100vh; }
+article, header {
+  max-width: 1024px;
+  margin: auto;
+  width: 100%;
+}
+nav {
+  a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    line-height: 1.5em;
+    margin: 5px 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+iframe {
+  max-width: 100%;
+  height: auto;
+  box-sizing: content-box;
+}
+.head {
+  list-style: none;
+  background-color: $black;
+  color: white;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  border-radius: 3px;
+}
+h1 { font-size: 4em; font-weight: lighter; text-align: center; margin: 0.5em 0em;
+ font-family: "Sacramento";
+}
+h2, h3 {
+  font-size: 2em;
+  //font-family: "Cabin Sketch";
+  font-family: "Sacramento";
+}
+h2, h3 { padding: 10px 0px; }
+ul, ol { padding: 0px 15px; }
+#recette {
+  h3 { border-bottom: solid 1px; padding: 0px; }
+}
+#messages {
+  ul {
+    padding: 0px;
+    li {
+      cursor: pointer;
+      margin-bottom: 0.5em;
+      list-style: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      border-radius: 3px;
+      h3 { padding: 0px; line-height: 3em; text-align: center; }
+    }
+  }
+  .message {
+    visibility: hidden;
+    height: 0px;
+    display:flex;
+    justify-content: center;
+    &.active { visibility: visible; height: auto; padding: 10px; }
+  }
+}
+//.size-default, h1, h2 { max-width: 1024px; margin: auto; width: 100%; }
