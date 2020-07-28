@@ -81,6 +81,14 @@ ul, ol { padding: 0px 15px; }
     height: 0px;
     display:flex;
     justify-content: center;
+    img {
+      object-fit: contain;
+      height: auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 12px;
+    }
     &.active { visibility: visible; height: auto; padding: 10px; }
   }
 }
